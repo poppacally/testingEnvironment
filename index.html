@@ -10,6 +10,12 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
+  <!--
+  <script>
+  var badgeText =  "issa badge";
+  </script>
+  -->
+
 </head>
 
 <body>
@@ -18,16 +24,74 @@
   <h1>H1 Title <small>H1 Secondary Text</small></h1>
   <p>Title Tagline</p>
 
+
+
+  <ul class="nav nav-pills nav-justified">
+    <li class="active"><a href="#">Home</a></li>
+    <li><a href="#">Menu 1</a></li>
+    <li><a href="#">Menu 2</a></li>
+    <li><a href="#">Menu 3</a></li>
+  </ul>
+
+  <!-- Basic Jumbotron -->
   <div class="jumbotron">
     <h1>BootStrap Jumbotron Title (h1)</h1>
     <p>BootStrap Jumbotron Tagline (p)</p>
   </div>
 
+  <ul class="nav nav-tabs">
+  <li class="active"><a data-toggle="tab" href="#home">Home</a></li>
+  <li><a data-toggle="tab" href="#menu1">Menu 1</a></li>
+  <li><a data-toggle="tab" href="#menu2">Menu 2</a></li>
+</ul>
+
+<!-- Toggleable content tabs-->
+  <div class="tab-content">
+    <div id="home" class="tab-pane fade in active">
+      <h3>HOME</h3>
+      <p>Some content.</p>
+    </div>
+    <div id="menu1" class="tab-pane fade">
+      <h3>Menu 1</h3>
+      <p>Some content in menu 1.</p>
+    </div>
+    <div id="menu2" class="tab-pane fade">
+      <h3>Menu 2</h3>
+      <p>Some content in menu 2.</p>
+    </div>
+  </div>
+
+  <!-- Different types of wells-->
   <div class="well">Basic Well (Medium, by default)</div>
 
-  <div class="well-sm">Small Well</div>
+  <!-- Test to see if var can be used within a button -->
+  <!--<button type="button" class="btn btn-primary">Button Text <span class="badge" id="badgeTextTest"><script>document.getElementById("badgeTextTest").innerHTML = badgeText;</script></span></button>-->
 
-  <div class="well-lg">Large Well</div>
+  <!--Panel-->
+  <div class="panel panel-default">
+    <div  class="panel-heading">Panel Heading</div>
+    <div  class="panel-body">Panel Body</div>
+    <div  class="panel-footer">Panel Footer</div>
+  </div>
+
+  <!-- Differtent types of alert
+  Add "alert-dismissable" to make the alert dismissable-->
+  <div class="alert alert-success alert-dismissable fade in fade out">
+    <a href="#" class="close" data-dismiss="alert" aria-label="close">x</a>
+    <strong>Success!</strong> <a href="#" class="alert-link">Link with style</a>
+  </div>
+
+  <div class="alert alert-info">
+    <strong>Info!</strong>
+  </div>
+
+  <div class="alert alert-warning">
+    <strong>Warning!</strong>
+  </div>
+
+  <div class="alert alert-danger">
+    <strong>Danger!</strong>
+  </div>
 
   <div class="row">
     <div class="col-*-*"></div>
